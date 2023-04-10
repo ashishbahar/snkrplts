@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import "./App.css";
+import LogoSection from "./components/LogoSection";
+import MyNav from "./components/MyNav";
+import Header from "./components/Header";
+import RelatedProduct from "./components/RelatedProduct";
+import NikeAir from "./components/NikeAir";
+import Description from "./components/Description";
+import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <LogoSection />
+      <MyNav />
+      <Header />
+      <NikeAir />
+      <Description />
+      <RelatedProduct />
+      <Footer />
+    </>
   );
 }
 
