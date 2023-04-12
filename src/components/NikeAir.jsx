@@ -119,7 +119,7 @@ const NikeAir = () => {
                 <p className="mb-0  ff_poppins fw_400 fs_md clr_black">
                   View this product as:
                 </p>
-                <p className="clr_blue  ff_poppins fw_400 fs_md">
+                <p className="clr_blue c_pointer  ff_poppins fw_400 fs_md">
                   Foot Locker NL
                 </p>
               </div>
@@ -128,8 +128,8 @@ const NikeAir = () => {
           <Col xl={3} lg={4} md={6} className="mt-sm-5 mt-3">
             <div className="hover_box">
               <div className=" box_border_2">
-                <div className="p-5">
-                  <img className="w-100" src={sidestep} alt="sidestep" />
+                <div className="p-5 ">
+                  <img className="w-100 " src={sidestep} alt="sidestep" />
                 </div>
               </div>
               <div className="px-3 py-3">
@@ -233,7 +233,7 @@ const NikeAir = () => {
                 <p className="mb-0  ff_poppins fw_400 fs_md clr_black">
                   View this product as:
                 </p>
-                <p className="clr_blue  ff_poppins fw_400 fs_md">
+                <p className="clr_blue c_pointer  ff_poppins fw_400 fs_md">
                   Foot Locker NL
                 </p>
               </div>
@@ -347,7 +347,7 @@ const NikeAir = () => {
                 <p className="mb-0  ff_poppins fw_400 fs_md clr_black">
                   View this product as:
                 </p>
-                <p className="clr_blue  ff_poppins fw_400 fs_md">
+                <p className="clr_blue c_pointer  ff_poppins fw_400 fs_md">
                   Foot Locker NL
                 </p>
               </div>
@@ -461,7 +461,7 @@ const NikeAir = () => {
                 <p className="mb-0  ff_poppins fw_400 fs_md clr_black">
                   View this product as:
                 </p>
-                <p className="clr_blue  ff_poppins fw_400 fs_md">
+                <p className="clr_blue c_pointer  ff_poppins fw_400 fs_md">
                   Foot Locker NL
                 </p>
               </div>

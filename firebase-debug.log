@@ -1,0 +1,84 @@
+[debug] [2023-04-10T11:19:29.908Z] ----------------------------------------------------------------------
+[debug] [2023-04-10T11:19:29.910Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASHISH\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-10T11:19:29.911Z] CLI Version:   11.25.3
+[debug] [2023-04-10T11:19:29.911Z] Platform:      win32
+[debug] [2023-04-10T11:19:29.911Z] Node Version:  v18.14.2
+[debug] [2023-04-10T11:19:29.918Z] Time:          Mon Apr 10 2023 16:49:29 GMT+0530 (India Standard Time)
+[debug] [2023-04-10T11:19:29.919Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-10T11:19:29.995Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-10T11:19:29.996Z] > authorizing via signed-in user (ashishbahar987@gmail.com)
+[debug] [2023-04-10T11:19:29.996Z] [iam] checking project snkr-plts-9b264 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-10T11:19:29.998Z] > refreshing access token with scopes: []
+[debug] [2023-04-10T11:19:30.000Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-10T11:19:30.000Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-10T11:19:33.920Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-04-10T11:19:33.921Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-10T11:19:33.935Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/snkr-plts-9b264:testIamPermissions [none]
+[debug] [2023-04-10T11:19:33.935Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/snkr-plts-9b264:testIamPermissions x-goog-quota-user=projects/snkr-plts-9b264
+[debug] [2023-04-10T11:19:33.936Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/snkr-plts-9b264:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-10T11:19:55.143Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/snkr-plts-9b264:testIamPermissions
+[debug] [2023-04-10T11:19:55.144Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/snkr-plts-9b264 [none]
+[debug] [2023-04-10T11:19:58.881Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/snkr-plts-9b264 200
+[debug] [2023-04-10T11:19:58.882Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/snkr-plts-9b264 {"projectId":"snkr-plts-9b264","projectNumber":"662002038140","displayName":"snkr-plts","name":"projects/snkr-plts-9b264","resources":{"hostingSite":"snkr-plts-9b264"},"state":"ACTIVE","etag":"1_2b09bcdb-3054-41e6-b9e2-acd6ea070a59"}
+[info] 
+[info] === Deploying to 'snkr-plts-9b264'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-04-10T11:19:58.891Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/versions [none]
+[debug] [2023-04-10T11:19:58.891Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-04-10T11:20:00.735Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/versions 200
+[debug] [2023-04-10T11:20:00.735Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/versions {"name":"projects/662002038140/sites/snkr-plts-9b264/versions/985f7ea6f62405ef","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[snkr-plts-9b264]: beginning deploy... 
+[info] i  hosting[snkr-plts-9b264]: found 40 files in build 
+[debug] [2023-04-10T11:20:02.258Z] [hosting] uploading with 200 concurrency
+[debug] [2023-04-10T11:20:02.277Z] [hosting] hash cache [YnVpbGQ] stored for 40 files
+[debug] [2023-04-10T11:20:02.278Z] [hosting][hash queue][FINAL] {"max":8,"min":0,"avg":0,"active":0,"complete":40,"success":40,"errored":0,"retried":0,"total":40,"elapsed":13}
+[debug] [2023-04-10T11:20:02.278Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/662002038140/sites/snkr-plts-9b264/versions/985f7ea6f62405ef:populateFiles [none]
+[debug] [2023-04-10T11:20:02.278Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/662002038140/sites/snkr-plts-9b264/versions/985f7ea6f62405ef:populateFiles {"files":{"/404.html":"daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa","/asset-manifest.json":"25ab019c4353c3b47ea22f6c41957d6d7d19753f3587ec92df69ffce2f1f22b8","/favicon.ico":"55ecc01fd1c852ed2c77e8747bda845dce022a8f5dbad57528c1d9fd8f047546","/index.html":"48a27aadf18c1f7873f93ac93b94a530d384fadb073ffa879545cccb22ff2601","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/static/css/main.a19650ab.css":"65ef27dd4d825e2d15ebd62ca80ccfb37b3cb4e14bd112e11f7fbf7231aac61b","/static/css/main.a19650ab.css.map":"cc1186ee25c9df94d9bdcec9488c127e518ff3edaa1512e29687fcd21581db24","/static/js/787.08de05b3.chunk.js":"2c80609316d472f2c901a14e22d7e6027b94f758e858030578ea55e8dd3b40db","/static/js/787.08de05b3.chunk.js.map":"60835e2a61df4f33ebc494e24bdf01432e5a260421b81260f4c19294fc761100","/static/js/main.2f14ec7b.js":"3b0c1b9d01c1800b05a898f3b3db1859fc217153b4f2a53b31ba52482f958325","/static/js/main.2f14ec7b.js.LICENSE.txt":"796ece36528b1ad66cadde8ae8d3a1d2fee6e8d174de5ee571a27cd69fcb1ec9","/static/js/main.2f14ec7b.js.map":"6eecb443ddbd062dd4643f19baf9681479f2cf88a848484409179d12afdac155","/static/media/add.e011f383da484a4bf365cb3610de3e22.svg":"bce8bfc25b440b66d035d54058c558c18f9100e8a1879030eb3e927c4660e489","/static/media/addphoto.8c0b13b7e479f4390d1d.png":"d557ff74b52360d996b577b1c27eaaa59687a66dff8499a98e6f2ccbe7a07543","/static/media/black-shoes.afdca13b473a1b09d924.png":"1e82cee6a12b1c7d8f23da486a905b9c9deda30ab5df76962781d103c278d044","/static/media/compare.d63224895707e24e2ed41b7db3cdc48c.svg":"f737d6f0d502057a80609fec4eeae1db1f9176fc9df9ad5401b6456c75dce01d","/static/media/cross.68b8b51035df8c5c391f6eed1e1cc80a.svg":"71b3b4b7ee863432d777bd55ded8ae023e838209c518a275c87c77526b889d44","/static/media/fb.3dbedbfc4d68beadf9a36b671d511ad7.svg":"76a7b5ff0593fbe847d7b775d263101559121ca5f6a453c07dfe99fa4c28c48c","/static/media/foot-locker.e7dffae2acc3d06e3a82.png":"2230698e6ea1b9dc2abfbecf07ae9660fad7caafd4dc1d25dd99bf313b4f3668","/static/media/footer_fb.07d93f3c6df2bb74978a0625e2e4789f.svg":"9653a19c23c72cdb9fae55640291455a3b99ec1b2a3155b0be2aab01851b50da","/static/media/google.96a547a7bea6d3176f19838111f1d906.svg":"bcd63d3bccbfd8046c43e0a6e3dcd279a72abc6be6269163a1bfb654d535aed2","/static/media/google2.6587190e2b9d05bfd1ce24eb65d328f9.svg":"98d3c3c75bd826ae6a54a432751e7222458f539f7e9c22d6d142d71fb8eb1065","/static/media/gray-shoes.acdd3e86c817f7192f58.png":"80395af5abccb9cb5aeb4fbadd9efddba9a0aaffaa469ca640258284d256fed8","/static/media/grey_shoes.77cee2c9b8ce596475b6.png":"1ef4bd210595db5129cb7a21c8856e2ff2557c536114eafea9a945c2ad1c297f","/static/media/logo.095cdb81f71fb9997eacb4a6fd083ce6.svg":"fffa9d73f424aa88a0de3b090e7cc04afffe882657dd72b6da12b5f54472bb83","/static/media/pagelogo.6c6a782d605a3a7e4297241024c7f6e4.svg":"6ed6ebd1864ee84f231f0cd238ce1a62d85df5ab0fc32a3e0d3cfe691d19c554","/static/media/ping.b3f6f824b2d21c3b3c686d79aa3a5d0a.svg":"80dcfda9bae225cac1769558b9ac80e754a69d3301c3b0116a009926a219da2a","/static/media/red-shoes.17288eb0c5d6c2d18989.png":"376419acc232c08074c37e28726ed7a4e6a0ab8aa6fcdfd5552ae3fb5a5aaa57","/static/media/redblack.68c98f662918c1ea2d23.png":"c0aeaf4ec33c3691813f7c47e81fbea3f90718325cca81dc5f62487e37c474b8","/static/media/red_shoes.de58dc36a6da421b167e.png":"5df76048434fdab3883f02db3dd013a2f8d603eed0b7df73be59ac042b614e71","/static/media/seec_1_shoes_img.bd6881eb1cfa598de8ca.png":"6132caeb4b28b1f5e162cfe3f8cd0ac9c40f332b60f1c09f9bf86862731eb715","/static/media/share.d4cbabc6a74cb44c0d52cf9e7d87d1df.svg":"a893b96408cd2f7da3a165b758dcd39b1273c2680cac14a56f607a0c1d64890a","/static/media/star.b0058f8ebdc03adbd8c013a1c325bcd1.svg":"374af370c199387c3cf9a32441d70712f0a1a272c085da1e64e9834237b91c37","/static/media/Starblack.1f1d509afaa9ccf48b7c4c4c124d9792.svg":"b5bed2f1d8a8a55c46e929ebef9ed78f9855aaba27495feb17ed26074cf0c5fc","/static/media/twiter'.8a4b19b3874be7e4edb26cddac295661.svg":"b81350b0ddbe86153beeed61ce5b50906b2cea5ecc8247700990c7ef92818e2c","/static/media/twiter.2.8a6bcfb75a0ff09cdacc1b1723b8c6d1.svg":"71ad71b9664d6c8e87c2e51f82234ab3938aaf504b0dad2da6f17e236126f604","/static/media/wishlist.38483f1ee06aa5ff91032b63810104ac.svg":"0e6f77cb598f34be301f27964179fac03e33f384cd456d909fcb47ac6473f302"}}
+[debug] [2023-04-10T11:20:03.924Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/662002038140/sites/snkr-plts-9b264/versions/985f7ea6f62405ef:populateFiles 200
+[debug] [2023-04-10T11:20:03.925Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/662002038140/sites/snkr-plts-9b264/versions/985f7ea6f62405ef:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/snkr-plts-9b264/versions/985f7ea6f62405ef/files"}
+[debug] [2023-04-10T11:20:03.925Z] [hosting][populate queue][FINAL] {"max":1650,"min":1650,"avg":1650,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1650}
+[debug] [2023-04-10T11:20:03.925Z] [hosting] uploads queued: 0
+[debug] [2023-04-10T11:20:03.925Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1681125603925}
+[info] +  hosting[snkr-plts-9b264]: file upload complete 
+[debug] [2023-04-10T11:20:03.926Z] [hosting] deploy completed after 1700ms
+[debug] [2023-04-10T11:20:03.930Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "snkr-plts-9b264"
+    },
+    "version": "projects/662002038140/sites/snkr-plts-9b264/versions/985f7ea6f62405ef"
+  }
+]
+[info] i  hosting[snkr-plts-9b264]: finalizing version... 
+[debug] [2023-04-10T11:20:03.933Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/versions/985f7ea6f62405ef updateMask=status%2Cconfig
+[debug] [2023-04-10T11:20:03.933Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/versions/985f7ea6f62405ef {"status":"FINALIZED","config":{}}
+[debug] [2023-04-10T11:20:12.499Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/versions/985f7ea6f62405ef 200
+[debug] [2023-04-10T11:20:12.499Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/versions/985f7ea6f62405ef {"name":"projects/662002038140/sites/snkr-plts-9b264/versions/985f7ea6f62405ef","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-04-10T11:20:03.187706Z","createUser":{"email":"ashishbahar987@gmail.com"},"finalizeTime":"2023-04-10T11:20:15.369993Z","finalizeUser":{"email":"ashishbahar987@gmail.com"}}
+[debug] [2023-04-10T11:20:12.499Z] [hosting] finalized version for snkr-plts-9b264:[object Object]
+[info] +  hosting[snkr-plts-9b264]: version finalized 
+[info] i  hosting[snkr-plts-9b264]: releasing new version... 
+[debug] [2023-04-10T11:20:12.501Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/channels/live/releases versionName=projects%2F662002038140%2Fsites%2Fsnkr-plts-9b264%2Fversions%2F985f7ea6f62405ef
+[debug] [2023-04-10T11:20:12.501Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/channels/live/releases {}
+[debug] [2023-04-10T11:20:14.045Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/channels/live/releases 200
+[debug] [2023-04-10T11:20:14.045Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/snkr-plts-9b264/channels/live/releases {"name":"projects/662002038140/sites/snkr-plts-9b264/channels/live/releases/1681125616313000","version":{"name":"projects/662002038140/sites/snkr-plts-9b264/versions/985f7ea6f62405ef","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-04-10T11:20:03.187706Z","createUser":{"email":"ashishbahar987@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxbP4JgtqfZcyApWi3LMNncXLYcGlvIvfTcf6bv1=mo"},"finalizeTime":"2023-04-10T11:20:15.369993Z","finalizeUser":{"email":"ashishbahar987@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxbP4JgtqfZcyApWi3LMNncXLYcGlvIvfTcf6bv1=mo"}},"type":"DEPLOY","releaseTime":"2023-04-10T11:20:16.313Z","releaseUser":{"email":"ashishbahar987@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxbP4JgtqfZcyApWi3LMNncXLYcGlvIvfTcf6bv1=mo"}}
+[debug] [2023-04-10T11:20:14.045Z] [hosting] release: {"name":"projects/662002038140/sites/snkr-plts-9b264/channels/live/releases/1681125616313000","version":{"name":"projects/662002038140/sites/snkr-plts-9b264/versions/985f7ea6f62405ef","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-04-10T11:20:03.187706Z","createUser":{"email":"ashishbahar987@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxbP4JgtqfZcyApWi3LMNncXLYcGlvIvfTcf6bv1=mo"},"finalizeTime":"2023-04-10T11:20:15.369993Z","finalizeUser":{"email":"ashishbahar987@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxbP4JgtqfZcyApWi3LMNncXLYcGlvIvfTcf6bv1=mo"}},"type":"DEPLOY","releaseTime":"2023-04-10T11:20:16.313Z","releaseUser":{"email":"ashishbahar987@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AGNmyxbP4JgtqfZcyApWi3LMNncXLYcGlvIvfTcf6bv1=mo"}}
+[info] +  hosting[snkr-plts-9b264]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/snkr-plts-9b264/overview
+[info] Hosting URL: https://snkr-plts-9b264.web.app
+[debug] [2023-04-10T11:20:21.001Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\ASHISH\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -30,6 +30,9 @@ const MyNav = () => {
           >
             <li>
               <a
+                onClick={() => {
+                  setfirst(true);
+                }}
                 className=" ff_roboto fw_400 fs_lg clr_black nav_hover color_white  mx-2"
                 href="#"
               >
@@ -38,6 +41,9 @@ const MyNav = () => {
             </li>{" "}
             <li>
               <a
+                onClick={() => {
+                  setfirst(true);
+                }}
                 className=" ff_roboto fw_400 fs_lg clr_black nav_hover color_white  mx-2"
                 href="#"
               >
@@ -46,6 +52,9 @@ const MyNav = () => {
             </li>{" "}
             <li>
               <a
+                onClick={() => {
+                  setfirst(true);
+                }}
                 className=" ff_roboto fw_400 fs_lg clr_black nav_hover color_white  mx-2"
                 href="#"
               >
@@ -54,6 +63,9 @@ const MyNav = () => {
             </li>{" "}
             <li>
               <a
+                onClick={() => {
+                  setfirst(true);
+                }}
                 className=" ff_roboto fw_400 fs_lg clr_black nav_hover color_white  mx-2"
                 href="#"
               >
@@ -62,6 +74,9 @@ const MyNav = () => {
             </li>{" "}
             <li>
               <a
+                onClick={() => {
+                  setfirst(true);
+                }}
                 className=" ff_roboto fw_400 fs_lg clr_black nav_hover color_white  mx-2"
                 href="#"
               >
@@ -70,6 +85,9 @@ const MyNav = () => {
             </li>{" "}
             <li>
               <a
+                onClick={() => {
+                  setfirst(true);
+                }}
                 className=" ff_roboto fw_400 fs_lg clr_black nav_hover color_white  mx-2"
                 href="#"
               >
@@ -78,6 +96,9 @@ const MyNav = () => {
             </li>{" "}
             <li>
               <a
+                onClick={() => {
+                  setfirst(true);
+                }}
                 className=" ff_roboto fw_400 fs_lg clr_black nav_hover color_white  ms-2"
                 href="#"
               >

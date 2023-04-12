@@ -15,45 +15,101 @@ import ping from "../assets/images/svg/ping.svg";
 import google from "../assets/images/svg/google.svg";
 const Header = () => {
   const [first, setfirst] = useState(1);
-
+  const [shoes, setshoes] = useState(0);
   useEffect(() => {}, [first]);
+  let minus = () => {
+    if (first === 1) {
+      setfirst(1);
+    } else {
+      setfirst(first - 1);
+    }
+  };
+  let add = () => {
+    if (first === 5) {
+      setfirst(5);
+    } else {
+      setfirst(first + 1);
+    }
+  };
   return (
     <header className=" bg_white mt-5">
       <Container>
         <Row className=" py-4">
           <Col lg={6}>
             <div className="py-4 bg_grey">
-              <img className="w-100" src={shoes_img} alt="shoes_img" />
-            </div>
-            <div className="d-flex mt-4 overflow_scroll example ">
               <img
-                className="me-4 min_width_137"
+                className={shoes === 0 ? "w-100 d-block" : "w-100 d-none"}
+                src={shoes_img}
+                alt="shoes_img"
+              />
+              <img
+                className={shoes === 1 ? "w-100 d-block" : "w-100 d-none"}
                 src={blackshoes}
                 alt="blackshoes"
               />
               <img
-                className="me-4 min_width_137"
-                src={redshoes}
-                alt="redshoes"
-              />
-              <img
-                className="me-4 min_width_137"
+                className={shoes === 2 ? "w-100 d-block" : "w-100 d-none"}
                 src={gray_shoes}
                 alt="gray_shoes"
               />
               <img
-                className="me-4  min_width_137"
+                className={shoes === 3 ? "w-100 d-block" : "w-100 d-none"}
                 src={redblack}
                 alt="redblack"
               />
+            </div>
+            <div className="d-flex mt-4 overflow_scroll example justify-content-between ">
               <img
-                className="me-4 min_width_137"
+                onClick={() => {
+                  setshoes(1);
+                }}
+                className={
+                  shoes === 1
+                    ? "me-4 shoes_width c_pointer border_red"
+                    : "me-4 shoes_width c_pointer border_bottom_grey"
+                }
+                src={blackshoes}
+                alt="blackshoes"
+              />
+              <img
+                onClick={() => {
+                  setshoes(0);
+                }}
+                className={
+                  shoes === 0
+                    ? "me-4 shoes_width c_pointer border_red"
+                    : "me-4 shoes_width c_pointer border_bottom_grey"
+                }
                 src={redshoes}
                 alt="redshoes"
               />
+              <img
+                onClick={() => {
+                  setshoes(2);
+                }}
+                className={
+                  shoes === 2
+                    ? "me-4 shoes_width c_pointer border_red"
+                    : "me-4 shoes_width c_pointer border_bottom_grey"
+                }
+                src={gray_shoes}
+                alt="gray_shoes"
+              />
+              <img
+                onClick={() => {
+                  setshoes(3);
+                }}
+                className={
+                  shoes === 3
+                    ? " shoes_width c_pointer border_red"
+                    : " shoes_width c_pointer border_bottom_grey"
+                }
+                src={redblack}
+                alt="redblack"
+              />
             </div>
           </Col>
-          <Col lg={6} className=" pt-4 ps-5">
+          <Col lg={6} className=" pt-4 ps-lg-5">
             <h1 className=" ff_poppins fw_600 fs_4xl color_black">
               PREMIUM MENS SPORTS LATHER KEDS
             </h1>
@@ -82,9 +138,7 @@ const Header = () => {
                   <div className="border   py-1 px-2 ms-3 me-4 ">
                     <span
                       className="ff_Josefin fw_400 fs_xl c_pointer clr_lightestgrey  cursur_poi"
-                      onClick={() => {
-                        setfirst(first - 1);
-                      }}
+                      onClick={minus}
                     >
                       -
                     </span>
@@ -93,16 +147,14 @@ const Header = () => {
                     </span>
                     <span
                       className="ff_Josefin fw_400 fs_xl c_pointer clr_lightestgrey  cursur_poi"
-                      onClick={() => {
-                        setfirst(first + 1);
-                      }}
+                      onClick={add}
                     >
                       +
                     </span>
                   </div>
                 </div>
               </div>
-              <button className=" ff_poppins border-0  fw_500 fs_xl clr_white btn_modify c_pointer   ">
+              <button className=" ff_poppins  cart_hover  fw_500 fs_xl clr_white btn_modify c_pointer   ">
                 Add to Cart
               </button>
             </div>
@@ -124,28 +176,48 @@ const Header = () => {
                 Color:
               </p>
               <div className="d-flex align-items-center">
-                <div className=" border_grey">
+                <div
+                  onClick={() => {
+                    setshoes(0);
+                  }}
+                  className=" border_grey c_pointer"
+                >
                   <div className="redcolor_box"></div>
                 </div>{" "}
-                <div className=" border_grey">
+                <div
+                  onClick={() => {
+                    setshoes(3);
+                  }}
+                  className=" border_grey c_pointer"
+                >
                   <div className="khakicolor_box"></div>
                 </div>{" "}
-                <div className=" border_grey">
+                <div
+                  onClick={() => {
+                    setshoes(1);
+                  }}
+                  className=" border_grey c_pointer"
+                >
                   <div className="blackcolor_box"></div>
                 </div>{" "}
-                <div className=" border_grey">
+                <div
+                  onClick={() => {
+                    setshoes(2);
+                  }}
+                  className=" border_grey c_pointer"
+                >
                   <div className="darkgreycolor_box"></div>
                 </div>
               </div>
-            </div>{" "}
+            </div>
             <div className="d-flex mt-3 bottom_border pb-4">
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center c_pointer">
                 <img src={compare} alt=" compare" />
                 <p className="mb-0 ff_poppins fw_300 clr_darkblack  ms-1 ">
                   Compare
                 </p>
               </div>
-              <div className="d-flex align-items-center ms-4">
+              <div className="d-flex align-items-center ms-4 c_pointer">
                 <img src={wishlist} alt=" wishlist" />
                 <p className="mb-0 ms-1 ff_poppins fw_300 clr_darkblack ">
                   Wishlist
@@ -153,11 +225,31 @@ const Header = () => {
               </div>
             </div>
             <div className="d-flex mt-3">
-              <img className=" c_pointer" src={share} alt="share" />
-              <img className="ms-4 c_pointer" src={fb} alt="fb" />
-              <img className="ms-4 c_pointer" src={twiter} alt="twiter" />
-              <img className="ms-4 c_pointer" src={ping} alt="ping" />
-              <img className="ms-4 c_pointer" src={google} alt="google" />
+              <img
+                className=" c_pointer transform_scale_hover"
+                src={share}
+                alt="share"
+              />
+              <img
+                className="ms-4 c_pointer transform_scale_hover"
+                src={fb}
+                alt="fb"
+              />
+              <img
+                className="ms-4 c_pointer transform_scale_hover"
+                src={twiter}
+                alt="twiter"
+              />
+              <img
+                className="ms-4 c_pointer transform_scale_hover"
+                src={ping}
+                alt="ping"
+              />
+              <img
+                className="ms-4 c_pointer transform_scale_hover"
+                src={google}
+                alt="google"
+              />
             </div>
           </Col>
         </Row>

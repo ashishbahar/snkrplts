@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-black mt-5 ">
       <Container className="py-5">
-        <img src={logo} alt="logo" />
+        <img className=" c_pointer" src={logo} alt="logo" />
         <Row>
           <Col lg={5}>
             <p className="ff_poppins fw_400 fs_lg clr_lightestwhite">
@@ -18,19 +18,27 @@ const Footer = () => {
             </p>
             <div className="d-flex">
               <a href="#">
-                <img src={fb} alt="fb" />
+                <img className="transform_scale_hover " src={fb} alt="fb" />
               </a>
               <a href="#">
-                <img src={twiter} alt="twiter" className="ms-4" />
+                <img
+                  className="transform_scale_hover ms-4 "
+                  src={twiter}
+                  alt="twiter"
+                />
               </a>
               <a href="#">
-                <img src={google} alt="google" className="ms-4" />
+                <img
+                  className="transform_scale_hover ms-4 "
+                  src={google}
+                  alt="google"
+                />
               </a>
             </div>
           </Col>
           <Col lg={7}>
-            <Row className="mt-3 mt-lg-0">
-              <Col xs={12} sm={6} md={3} lg={3} className=" mt-5 mt-sm-0">
+            <Row className="mt-3 mt-sm-5 mt-lg-0 pb-4">
+              <Col xs={6} sm={6} md={3} lg={3} className=" mt-5 mt-sm-0">
                 <ul className="m-0 p-0">
                   <li className="ff_poppins fw_600 fs_lg clr_white mb-4">
                     CUSTOM LINKS
@@ -53,7 +61,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </Col>
-              <Col xs={12} sm={6} md={3} lg={3} className=" mt-5 mt-sm-0">
+              <Col xs={6} sm={6} md={3} lg={3} className=" mt-5 mt-sm-0">
                 <ul className="mb-0 ps-0">
                   <li className="ff_poppins fw_600 fs_lg clr_white mb-4">
                     PRODUCTS
@@ -84,7 +92,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </Col>
-              <Col xs={12} sm={6} md={3} lg={3} className=" mt-5 mt-md-0">
+              <Col xs={6} sm={6} md={3} lg={3} className=" mt-5 mt-md-0">
                 <ul className="mb-0 ps-0">
                   <li className="ff_poppins fw_600 fs_lg clr_white mb-4">
                     OUR COMPANY
@@ -107,7 +115,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </Col>
-              <Col xs={12} sm={6} md={3} lg={3} className=" mt-5 mt-md-0">
+              <Col xs={6} sm={6} md={3} lg={3} className=" mt-5 mt-md-0">
                 <ul className="mb-0 ps-0">
                   <li className="ff_poppins fw_600 fs_lg clr_white mb-4">
                     YOUR ACCOUNT

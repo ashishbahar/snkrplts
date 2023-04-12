@@ -9,9 +9,9 @@ const RelatedProduct = () => {
   return (
     <section className=" bg_white pb-sm-5">
       <Container>
-        <p className=" ff_poppins fw_600 fs_4xl clr_black">RELATED PRODUCT</p>
+        <h2 className=" ff_poppins fw_600 fs_4xl clr_black">RELATED PRODUCT</h2>
         <Row>
-          <Col lg={3} md={4} sm={6} className=" my-4 ">
+          <Col lg={3} md={4} sm={6} className=" my-4 hover_on_box ">
             <div className="box_border position-relative box_modify c_pointer ">
               <p className=" position-absolute ff_poppins fw_400 fs_sm px-3 py-1 clr_white new_position">
                 NEW
@@ -30,7 +30,7 @@ const RelatedProduct = () => {
                       $90.00 <span className="clr_lightred">$70.00</span>
                     </p>
                   </div>
-                  <img src={add} alt="add" />
+                  <img src={add} alt="add" className=" transform_scale_hover" />
                 </div>
                 <div className="d-flex">
                   <img src={blackstar} alt="blackstar" />
@@ -42,7 +42,7 @@ const RelatedProduct = () => {
               </div>
             </div>
           </Col>{" "}
-          <Col lg={3} md={4} sm={6} className=" my-4 ">
+          <Col lg={3} md={4} sm={6} className=" my-4 hover_on_box ">
             <div className="box_border position-relative box_modify c_pointer ">
               <p className=" position-absolute ff_poppins fw_400 fs_sm px-3 py-1 clr_white new_position">
                 NEW
@@ -61,7 +61,7 @@ const RelatedProduct = () => {
                       $90.00 <span className="clr_lightred">$70.00</span>
                     </p>
                   </div>
-                  <img src={add} alt="add" />
+                  <img src={add} alt="add" className=" transform_scale_hover" />
                 </div>
                 <div className="d-flex">
                   <img src={blackstar} alt="blackstar" />
@@ -73,7 +73,7 @@ const RelatedProduct = () => {
               </div>
             </div>
           </Col>{" "}
-          <Col lg={3} md={4} sm={6} className=" my-4 ">
+          <Col lg={3} md={4} sm={6} className=" my-4 hover_on_box ">
             <div className="box_border position-relative box_modify c_pointer ">
               <p className=" position-absolute ff_poppins fw_400 fs_sm px-3 py-1 clr_white new_position">
                 NEW
@@ -92,7 +92,7 @@ const RelatedProduct = () => {
                       $90.00 <span className="clr_lightred">$70.00</span>
                     </p>
                   </div>
-                  <img src={add} alt="add" />
+                  <img src={add} alt="add" className=" transform_scale_hover" />
                 </div>
                 <div className="d-flex">
                   <img src={blackstar} alt="blackstar" />
@@ -104,7 +104,7 @@ const RelatedProduct = () => {
               </div>
             </div>
           </Col>{" "}
-          <Col lg={3} md={4} sm={6} className=" my-4 ">
+          <Col lg={3} md={4} sm={6} className=" my-4 hover_on_box ">
             <div className="box_border position-relative box_modify c_pointer ">
               <p className=" position-absolute ff_poppins fw_400 fs_sm px-3 py-1 clr_white new_position">
                 NEW
@@ -123,7 +123,7 @@ const RelatedProduct = () => {
                       $90.00 <span className="clr_lightred">$70.00</span>
                     </p>
                   </div>
-                  <img src={add} alt="add" />
+                  <img src={add} alt="add" className=" transform_scale_hover" />
                 </div>
                 <div className="d-flex">
                   <img src={blackstar} alt="blackstar" />
@@ -135,7 +135,7 @@ const RelatedProduct = () => {
               </div>
             </div>
           </Col>{" "}
-          <Col lg={3} md={4} sm={6} className=" my-4 ">
+          <Col lg={3} md={4} sm={6} className=" my-4 hover_on_box ">
             <div className="box_border position-relative box_modify c_pointer ">
               <p className=" position-absolute ff_poppins fw_400 fs_sm px-3 py-1 clr_white new_position">
                 NEW
@@ -154,7 +154,7 @@ const RelatedProduct = () => {
                       $90.00 <span className="clr_lightred">$70.00</span>
                     </p>
                   </div>
-                  <img src={add} alt="add" />
+                  <img src={add} alt="add" className=" transform_scale_hover" />
                 </div>
                 <div className="d-flex">
                   <img src={blackstar} alt="blackstar" />
@@ -166,7 +166,7 @@ const RelatedProduct = () => {
               </div>
             </div>
           </Col>{" "}
-          <Col lg={3} md={4} sm={6} className=" my-4 ">
+          <Col lg={3} md={4} sm={6} className=" my-4 hover_on_box ">
             <div className="box_border position-relative box_modify c_pointer ">
               <p className=" position-absolute ff_poppins fw_400 fs_sm px-3 py-1 clr_white new_position">
                 NEW
@@ -185,7 +185,7 @@ const RelatedProduct = () => {
                       $90.00 <span className="clr_lightred">$70.00</span>
                     </p>
                   </div>
-                  <img src={add} alt="add" />
+                  <img src={add} alt="add" className=" transform_scale_hover" />
                 </div>
                 <div className="d-flex">
                   <img src={blackstar} alt="blackstar" />
@@ -197,7 +197,7 @@ const RelatedProduct = () => {
               </div>
             </div>
           </Col>{" "}
-          <Col lg={3} md={4} sm={6} className=" my-4 ">
+          <Col lg={3} md={4} sm={6} className=" my-4 hover_on_box ">
             <div className="box_border position-relative box_modify c_pointer ">
               <p className=" position-absolute ff_poppins fw_400 fs_sm px-3 py-1 clr_white new_position">
                 NEW
@@ -216,7 +216,7 @@ const RelatedProduct = () => {
                       $90.00 <span className="clr_lightred">$70.00</span>
                     </p>
                   </div>
-                  <img src={add} alt="add" />
+                  <img src={add} alt="add" className=" transform_scale_hover" />
                 </div>
                 <div className="d-flex">
                   <img src={blackstar} alt="blackstar" />
@@ -228,7 +228,7 @@ const RelatedProduct = () => {
               </div>
             </div>
           </Col>{" "}
-          <Col lg={3} md={4} sm={6} className=" my-4 ">
+          <Col lg={3} md={4} sm={6} className=" my-4 hover_on_box ">
             <div className="box_border position-relative box_modify c_pointer ">
               <p className=" position-absolute ff_poppins fw_400 fs_sm px-3 py-1 clr_white new_position">
                 NEW
@@ -247,7 +247,7 @@ const RelatedProduct = () => {
                       $90.00 <span className="clr_lightred">$70.00</span>
                     </p>
                   </div>
-                  <img src={add} alt="add" />
+                  <img src={add} alt="add" className=" transform_scale_hover" />
                 </div>
                 <div className="d-flex">
                   <img src={blackstar} alt="blackstar" />
@@ -260,15 +260,15 @@ const RelatedProduct = () => {
             </div>
           </Col>
         </Row>
-        <div className="d-flex justify-content-end align-items-center mt-5">
+        <div className="d-flex justify-content-sm-end justify-content-center align-items-center mt-5">
           <p
             onClick={() => {
               setfirst(0);
             }}
             className={
               first === 0
-                ? "ff_poppins fw_600 fs_2xl small_box  bg_red"
-                : "ff_poppins fw_600 fs_2xl small_box  "
+                ? "ff_poppins fw_600 fs_2xl small_box c_pointer  bg_red"
+                : "ff_poppins fw_600 fs_2xl small_box c_pointer  "
             }
           >
             1
@@ -279,8 +279,8 @@ const RelatedProduct = () => {
             }}
             className={
               first === 1
-                ? "ff_poppins fw_600 fs_2xl small_box  bg_red ms-3"
-                : "ff_poppins fw_600 fs_2xl small_box ms-3  "
+                ? "ff_poppins fw_600 fs_2xl small_box c_pointer  bg_red ms-3"
+                : "ff_poppins fw_600 fs_2xl small_box c_pointer ms-3  "
             }
           >
             2
@@ -291,14 +291,14 @@ const RelatedProduct = () => {
             }}
             className={
               first === 2
-                ? "ff_poppins fw_600 fs_2xl small_box  bg_red ms-3"
-                : "ff_poppins fw_600 fs_2xl small_box ms-3  "
+                ? "ff_poppins fw_600 fs_2xl small_box c_pointer  bg_red ms-3"
+                : "ff_poppins fw_600 fs_2xl small_box c_pointer ms-3  "
             }
           >
             3
           </p>
-          <p className=" ff_poppins fs_md clr_lightestblack fw_400 border_offwhite ms-3 d-none d-sm-block">
-            Next
+          <p className=" c_pointer ff_poppins fs_md clr_lightestblack fw_400 border_offwhite ms-3 d-none d-sm-block">
+            Next <span>&#62;</span><span>&#62;</span>
           </p>
         </div>
       </Container>

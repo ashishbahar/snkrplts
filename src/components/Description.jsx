@@ -6,7 +6,7 @@ const Description = () => {
   return (
     <section className="py-lg-5 py-3">
       <Container>
-        <div className="d-flex overflow_x_scroll  align-items-start">
+        <div className="d-flex overflow_x_scroll example  align-items-start">
           <div
             onClick={() => {
               setfirst(0);
